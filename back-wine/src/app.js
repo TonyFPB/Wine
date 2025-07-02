@@ -5,6 +5,7 @@ import {
   recuperarMediaVinhosPais,
   recuperarQuantidadeAvaliacoes,
   recuperarUsuariosSemAvaliacoes,
+  recuperarVinhosMaiorNota,
   recuperarVinhosAvaliadosPorUsuariosExperientes
 } from "./repository/query.repository.js"
 // import { authRouter, transactionRouter } from "./routers"
@@ -66,6 +67,17 @@ app.get("/qtdAvaliacao", async (req, res) => {
     const qtdAv = await recuperarQuantidadeAvaliacoes();
     
     res.send(qtdAv)
+  } catch (err) {
+    console.log(err)
+    res.sendStatus(500)
+  }
+})
+
+app.get("/vinhosMaiorNota", async (req, res) => {
+  try {
+    const vinhos = await recuperarVinhosMaiorNota();
+    
+    res.send(vinhos)
   } catch (err) {
     console.log(err)
     res.sendStatus(500)

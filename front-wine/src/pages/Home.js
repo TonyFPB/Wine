@@ -14,6 +14,7 @@ export default function Home () {
         <StyledDivButton><Button onClick={()=>navigate('/quantidadeAvaliacoes')} style={{color:'black'}}>Filtrar quantidade de avaliações por vinho</Button></StyledDivButton>
         <StyledDivButton><Button onClick={()=>navigate('/media')}style={{color:'black'}}>Recuperar media de paises</Button></StyledDivButton>
         <StyledDivButton><Button onClick={()=>navigate('/usuariosSemAvaliacao')} style={{color:'black'}}>Recuperar usuarios sem avaliações</Button></StyledDivButton>
+        <StyledDivButton><Button onClick={()=>navigate('/vinhosMaiorNota')} style={{color:'black'}}>Recuperar vinhos com uma nota maior que a média do país</Button></StyledDivButton>
         <StyledDivButton><Button onClick={()=>navigate('/vinhosBemAvaliados')} style={{color:'black'}}>Recuperar vinhos avaliados por usuarios experientes</Button></StyledDivButton>
       </StyleBody>
     </>
