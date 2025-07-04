@@ -5,7 +5,7 @@ export default function Header() {
   const navigate = useNavigate()
   return (
       <StyledHeader>
-          <h1 onClick={()=>navigate('/')}>Wine</h1>
+          <h1 onClick={()=>navigate('/')}>Wine Taster</h1>
       </StyledHeader>
   )
 }
@@ -29,9 +29,4 @@ const StyledHeader = styled.div`
         color: #FFFFFF;
         cursor: pointer;
     }
-    img{
-        width: 51px;
-        height: 51px;
-        border-radius: 100px;
-    } 
 `
