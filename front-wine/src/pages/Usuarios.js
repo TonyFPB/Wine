@@ -16,6 +16,8 @@ export default function Usuarios() {
     <>
       <Header />
       <StyleBody>
+      <Typography variant="h3">Recuperar usuarios sem avaliações</Typography>
+      
         {
           usuarios ? (
             usuarios.map(

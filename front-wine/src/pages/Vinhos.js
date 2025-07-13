@@ -15,7 +15,8 @@ export default function Vinhos() {
     <>
       <Header />
       <StyleBody>
-
+      <Typography variant="h3">Filtrar Vinhos Acima com nota acima de 60</Typography>
+      
         {
           vinhos ? (
             vinhos.map(

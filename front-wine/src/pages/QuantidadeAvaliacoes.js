@@ -16,6 +16,7 @@ export default function QuantidadeAvaliacoes() {
     <>
       <Header />
       <StyleBody>
+      <Typography variant="h3">Filtrar quantidade de avaliações por vinho</Typography>   
         {
           qtdAva ? (
             qtdAva.map(

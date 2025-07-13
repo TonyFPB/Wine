@@ -15,7 +15,7 @@ export default function VinhosMaiorNota() {
     <>
       <Header />
       <StyleBody>
-
+      <Typography variant="h3">Recuperar vinhos com uma nota maior que a média do país</Typography>
         {
           vinhos ? (
             vinhos.map(

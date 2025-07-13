@@ -15,7 +15,7 @@ export default function VinhosAvaliados() {
     <>
       <Header />
       <StyleBody>
-
+      <Typography variant="h3">Recuperar vinhos avaliados por usuarios experientes</Typography>
         {
           vinhos ? (
             vinhos.map(

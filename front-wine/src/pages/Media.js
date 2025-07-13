@@ -16,6 +16,8 @@ export default function Media() {
     <>
       <Header />
       <StyleBody>
+      <Typography variant="h3">Recuperar media dos vinhos por pais</Typography>
+      
         {
           paisesMedia ? (
             paisesMedia.map(
