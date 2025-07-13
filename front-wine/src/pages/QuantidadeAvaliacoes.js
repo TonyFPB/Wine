@@ -22,7 +22,7 @@ export default function QuantidadeAvaliacoes() {
               qtd => {
                 console.log(qtd)
                 return (
-                  <Card sx={{ maxWidth: 450, margin: 3 }}>
+                  <Card sx={{ width: 450, margin: 3 }}>
                     <CardActionArea>
                       <CardContent>
                         <Typography gutterBottom variant="h6" component="div">

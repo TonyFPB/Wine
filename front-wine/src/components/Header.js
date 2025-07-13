@@ -5,7 +5,7 @@ export default function Header() {
   const navigate = useNavigate()
   return (
       <StyledHeader>
-          <h1 onClick={()=>navigate('/')}>Wine Taster</h1>
+          <h1 onClick={()=>navigate('/')}>Wine</h1>
       </StyledHeader>
   )
 }

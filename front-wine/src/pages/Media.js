@@ -22,7 +22,7 @@ export default function Media() {
               m => {
                 console.log(m)
                 return (
-                  <Card sx={{ maxWidth: 450, margin: 1 }}>
+                  <Card sx={{ width: 200, margin: 1 }}>
                     <CardActionArea>
                       <CardContent>
                         <Typography gutterBottom variant="h6" component="div">
