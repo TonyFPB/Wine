@@ -1,7 +1,5 @@
 import { Card, CardActionArea, CardContent, Divider, List, ListItem, ListItemText, Typography } from "@mui/material";
 import React, { useState } from "react";
-import AreaComentario from "../components/AreaComentario";
-
 
 export default function FeedVinho({ vinho, avaliacoes, recuperarVinho }) {
   if (vinho === undefined) {
