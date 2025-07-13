@@ -10,7 +10,6 @@ export default function QuantidadeAvaliacoes() {
 
   useEffect(() => {
     qtdAvaliacao().then(res => setQtdAvaliacao(res));
-    console.log(qtdAva)
   }, [])
   return (
     <>
@@ -21,7 +20,6 @@ export default function QuantidadeAvaliacoes() {
           qtdAva ? (
             qtdAva.map(
               qtd => {
-                console.log(qtd)
                 return (
                   <Card sx={{ width: 450, margin: 3 }}>
                     <CardActionArea>

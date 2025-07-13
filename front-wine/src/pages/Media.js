@@ -10,7 +10,6 @@ export default function Media() {
 
   useEffect(() => {
     mediaPais().then(res => setPaisesMedia(res));
-    console.log(paisesMedia)
   }, [])
   return (
     <>
@@ -22,7 +21,6 @@ export default function Media() {
           paisesMedia ? (
             paisesMedia.map(
               m => {
-                console.log(m)
                 return (
                   <Card sx={{ width: 200, margin: 1 }}>
                     <CardActionArea>

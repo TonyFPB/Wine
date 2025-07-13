@@ -9,7 +9,6 @@ export default function VinhosMaiorNota() {
 
   useEffect(() => {
     vinhosMaiorNota().then(res => setVinhos(res));
-    console.log(vinhos)
   }, [])
   return (
     <>
@@ -20,7 +19,6 @@ export default function VinhosMaiorNota() {
           vinhos ? (
             vinhos.map(
               v => {
-                console.log(v)
                 return (
                   <Card sx={{ maxWidth: 450, margin: 3 }}>
                     <CardActionArea>

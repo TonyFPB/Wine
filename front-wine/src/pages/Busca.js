@@ -39,7 +39,6 @@ export default function Busca() {
   async function autoComplete(nome) {
     const resultados = await buscarVinhos(nome)
     setVinhos(resultados)
-    console.log(resultados)
   }
 
   return (
@@ -60,7 +59,6 @@ export default function Busca() {
               )}
               inputValue={busca}
               onInputChange={(event, newInputValue) => {
-                console.log(event.target.value)
                 if (newInputValue.length >= 3) {
                   autoComplete(newInputValue)
                 }

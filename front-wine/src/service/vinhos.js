@@ -5,7 +5,6 @@ const url = 'http://localhost:5000'
 
 export async function buscarVinhos(vinhoNome){
   const path = vinhoNome ? `/${vinhoNome}` : ''
-  console.log(path)
   const vinho = await axios.get(`${url}/vinhosPorNome${path}`)
   return vinho.data
 }

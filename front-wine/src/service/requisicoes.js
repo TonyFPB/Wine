@@ -5,7 +5,6 @@ const url = 'http://localhost:5000'
 
 export async function notaVinhoMaior60() {
   const vinho = await axios.get(`${url}/vinhosNota`, {nota: 80})
-  console.log(vinho)
   return vinho.data
 }
 

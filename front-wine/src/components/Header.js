@@ -6,7 +6,7 @@ export default function Header() {
   return (
       <StyledHeader>
           <h1 onClick={()=>navigate('/')}>Wine</h1>
-          <h1 onClick={()=>navigate('/busca')}>Site</h1>
+          <h1 onClick={()=>navigate('/busca')}>Buscar Vinhos</h1>
       </StyledHeader>
   )
 }

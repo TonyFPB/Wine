@@ -9,18 +9,16 @@ export default function VinhosAvaliados() {
 
   useEffect(() => {
     vinhosAvaliados().then(res => setVinhos(res));
-    console.log(vinhos)
   }, [])
   return (
     <>
       <Header />
       <StyleBody>
-      <Typography variant="h3">Recuperar vinhos avaliados por usuarios experientes</Typography>
+      <Typography variant="h3">Recuperar vinhos com nota maior que 80 avaliados por usuarios experientes</Typography>
         {
           vinhos ? (
             vinhos.map(
               v => {
-                console.log(v)
                 return (
                   <Card sx={{ maxWidth: 450, margin: 3 }}>
                     <CardActionArea>

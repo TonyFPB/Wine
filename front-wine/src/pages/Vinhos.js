@@ -9,7 +9,6 @@ export default function Vinhos() {
 
   useEffect(() => {
     notaVinhoMaior60().then(res => setVinhos(res));
-    console.log(vinhos)
   }, [])
   return (
     <>

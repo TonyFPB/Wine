@@ -10,7 +10,6 @@ export default function Usuarios() {
 
   useEffect(() => {
     usuarioSemAvaliacoes().then(res => setUsuarios(res));
-    console.log(usuarios)
   }, [])
   return (
     <>

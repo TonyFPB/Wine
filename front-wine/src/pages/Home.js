@@ -15,7 +15,7 @@ export default function Home () {
         <StyledDivButton><Button onClick={()=>navigate('/media')}style={{color:'black'}}>Recuperar media dos vinhos por pais</Button></StyledDivButton>
         <StyledDivButton><Button onClick={()=>navigate('/usuariosSemAvaliacao')} style={{color:'black'}}>Recuperar usuarios sem avaliações</Button></StyledDivButton>
         <StyledDivButton><Button onClick={()=>navigate('/vinhosMaiorNota')} style={{color:'black'}}>Recuperar vinhos com uma nota maior que a média do país</Button></StyledDivButton>
-        <StyledDivButton><Button onClick={()=>navigate('/vinhosBemAvaliados')} style={{color:'black'}}>Recuperar vinhos avaliados por usuarios experientes</Button></StyledDivButton>
+        <StyledDivButton><Button onClick={()=>navigate('/vinhosBemAvaliados')} style={{color:'black'}}>Recuperar vinhos com nota maior que 80 avaliados por usuarios experientes</Button></StyledDivButton>
       </StyleBody>
     </>
   )
@@ -33,7 +33,7 @@ export const StyleBody = styled.div`
 `
 
 const StyledDivButton = styled.div`
-  height: 100px;
+  height: 150px;
   width: 170px;
   border-radius: 10%;
   background-color: #D3D3D3;

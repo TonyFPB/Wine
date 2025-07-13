@@ -99,9 +99,8 @@ app.get("/vinhosAvaliados", async (req, res) => {
 app.get("/vinhosPorNome", async (req, res) => {
   try {
     const {nome} = req.params
-    console.log(nome)
     const vinhos = await recuperarVinhosPorNome(nome);
-    console.log(vinhos)
+
     res.send(vinhos)
   } catch (err) {
     console.log(err)
@@ -112,9 +111,8 @@ app.get("/vinhosPorNome", async (req, res) => {
 app.get("/vinhosPorNome/:nome", async (req, res) => {
   try {
     const {nome} = req.params
-    console.log(nome)
     const vinhos = await recuperarVinhosPorNome(nome);
-    console.log(vinhos)
+
     res.send(vinhos)
   } catch (err) {
     console.log(err)
@@ -124,11 +122,9 @@ app.get("/vinhosPorNome/:nome", async (req, res) => {
 
 app.get("/vinho/:id", async (req, res) => {
   try {
-    const {id} = req.params
-    console.log(id)
-    
+    const {id} = req.params    
     const vinho = await recuperarVinhoPorId(id);
-    console.log(vinho)
+
     res.send(vinho)
   } catch (err) {
     console.log(err)
