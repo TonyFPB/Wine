@@ -8,6 +8,7 @@ import {
   recuperarVinhosMaiorNota,
   recuperarVinhosAvaliadosPorUsuariosExperientes
 } from "./repository/query.repository.js"
+import { recuperarVinhoPorId, recuperarVinhosPorNome } from "./repository/vinhos.repository.js"
 // import { authRouter, transactionRouter } from "./routers"
 // import authRouter from './Routers/authRoutes.js'
 // import transactionsRouters from "./Routers/transactionsRoutes.js"
@@ -89,6 +90,46 @@ app.get("/vinhosAvaliados", async (req, res) => {
     const vinhos = await recuperarVinhosAvaliadosPorUsuariosExperientes();
     
     res.send(vinhos)
+  } catch (err) {
+    console.log(err)
+    res.sendStatus(500)
+  }
+})
+
+app.get("/vinhosPorNome", async (req, res) => {
+  try {
+    const {nome} = req.params
+    console.log(nome)
+    const vinhos = await recuperarVinhosPorNome(nome);
+    console.log(vinhos)
+    res.send(vinhos)
+  } catch (err) {
+    console.log(err)
+    res.sendStatus(500)
+  }
+})
+
+app.get("/vinhosPorNome/:nome", async (req, res) => {
+  try {
+    const {nome} = req.params
+    console.log(nome)
+    const vinhos = await recuperarVinhosPorNome(nome);
+    console.log(vinhos)
+    res.send(vinhos)
+  } catch (err) {
+    console.log(err)
+    res.sendStatus(500)
+  }
+})
+
+app.get("/vinho/:id", async (req, res) => {
+  try {
+    const {id} = req.params
+    console.log(id)
+    
+    const vinho = await recuperarVinhoPorId(id);
+    console.log(vinho)
+    res.send(vinho)
   } catch (err) {
     console.log(err)
     res.sendStatus(500)
